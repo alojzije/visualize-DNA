@@ -1,3 +1,3 @@
-dna-visualized
+visualize-dna
 ==============
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>DNA visualization</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/bootstrap-theme.min.css">
+
+	<script language="javascript" src="scripts/p5.js"></script>
+	<script language="javascript" src="scripts/p5.dom.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		form{
+			display: inline-block;
+			float: left;
+			min-width: 20em;
+			max-width: 30%;
+			text-align:center;
+		}
+		canvas{
+			display: inline-block;
+			float: right;
+			border: 1px solid #999;
+		}
+
+		.container {
+			margin: 10em auto;
+		}
+	</style>
+	<div class="container" id="container">
+		<form id="form">
+			<label for="dnaTextArea">Enter a DNA sequence</label><br>
+			<textarea id="dnaTextArea" class="form-control" rows="10" cols="50"></textarea><br><br>
+			<input id="dnaTxtButton" type="button" class="btn" value="Button">
+		</form> 
+
+		
+	</div>
+	<script language="javascript" src="scripts/sketch.js"></script>
+
+</body>
+</html>

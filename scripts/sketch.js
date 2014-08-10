@@ -52,7 +52,7 @@ window.onload = function(){
         default:
           if(!p5_3) {
             p5_3 = new p5(s, 'canvas_3');
-            p5_3.stroke(255, 153,0, 80);
+            p5_3.stroke(244, 115, 61, 80);
           }
           else
             redraw1(p5_3);
@@ -69,8 +69,8 @@ function redraw1(myp5){
 }
 var s = function(sketch){
 
-var xbound = 200;
-var ybound = 200;
+var xbound = 170;
+var ybound = 170;
 var px = xbound/2;
 var py = ybound/2;  
 var aminoacid = '';
@@ -81,7 +81,7 @@ var i = 0;
 
   sketch.setup = function() {
     // put setup code here
-    sketch.createCanvas(200,200);
+    sketch.createCanvas(170,170);
     sketch.strokeWeight(2);
     sketch.stroke(0, 128, 128, 80);
     sketch.background(200);

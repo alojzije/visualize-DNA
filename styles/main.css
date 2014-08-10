@@ -18,22 +18,22 @@ body, html{
 
 #canvasOuterContainer{
 	width: 50%;
-	min-width: 410px;
+	min-width: 360px;
 	display: inline-block;
 	float: right;
 }
 #canvasContainer{
-	width: 410px;
-	min-width: 410px;
-	height: 410px;	
+	width: 350px;
+	min-width: 350px;
+	height: 350px;	
 	display: inline-block;
 	margin: 0 auto;
 }
 
 
 #canvasContainer >div{
-	width: 201px;
-	height: 201px;
+	width: 171px;
+	height: 171px;
 	background-color: #ddd;
 	display: inline-block;
 }
@@ -46,14 +46,13 @@ body, html{
 
 #uploadContainer{
 	min-width: 20em;
-	padding-top: 1em;
 	display: inline-block;
 	float: left;
 }
 
 .container {
 	width: 100%;
-	margin-top: 3em;
+	margin-top: 4em;
 }
 
 @media screen and (max-width: 1000px){

@@ -14,6 +14,7 @@ body, html{
 .title > div {
 	display: inline-block;	
 	vertical-align: middle;
+
 }
  .title img{
 	margin: 2.2em 0.5em 0.2em 0;
@@ -55,7 +56,7 @@ body, html{
 
 .container {
 	width: 100%;
-	margin-top: 4em;
+	margin-top: 4.5em;
 }
 
 #canvas_4{

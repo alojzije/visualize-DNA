@@ -4,7 +4,7 @@ $(function() {
     $('#dnaTxtButton').click(function(e) {
     e.preventDefault();
     lines = $('#dnaTextArea').val();
-    if(!myp5) myp5 = new p5(s, 'container');
+    if(!myp5) myp5 = new p5(s, 'canvasContainer');
     else{
       myp5.clear();
       myp5.loop();
@@ -18,10 +18,9 @@ var s = function(sketch){
 
 var xbound = 200;
 var ybound = 200;
-var c ='T';
-var dna=0;
 var px = xbound/2;
 var py = ybound/2;  
+var aminoacid = '';
 var i = 0;
 
 
@@ -40,7 +39,6 @@ var i = 0;
   sketch.draw = function (){
 
     var cnt = 10;
-    var aminoacid = 'T'
     while(--cnt){
       aminoacid = lines.charAt(i).toUpperCase();   
       switch(aminoacid){
@@ -66,9 +64,8 @@ var i = 0;
       }
 
       if(++i >= lines.length){
-        console.log(i);
         sketch.noLoop(); 
-        i=0;
+        i = 0;
         break;
       }
       sketch.point(parseInt(px),parseInt(py));

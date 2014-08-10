@@ -16,13 +16,14 @@
 			display: inline-block;
 			float: left;
 			min-width: 20em;
-			max-width: 30%;
+			max-width: 40%;
 			text-align:center;
 		}
-		canvas{
+		#canvasContainer{
 			display: inline-block;
 			float: right;
 			border: 1px solid #999;
+
 		}
 
 		.container {
@@ -33,10 +34,10 @@
 		<form id="form">
 			<label for="dnaTextArea">Enter a DNA sequence</label><br>
 			<textarea id="dnaTextArea" class="form-control" rows="10" cols="50"></textarea><br><br>
-			<input id="dnaTxtButton" type="button" class="btn" value="Button">
+			<input id="dnaTxtButton" type="button" class="btn" value="Visualize">
 		</form> 
 
-		
+		<div id="canvasContainer"></div>
 	</div>
 	<script language="javascript" src="scripts/sketch.js"></script>
 

@@ -14,26 +14,31 @@
 </head>
 <body>
 	<h1 class="title"> <img src="corners.png">
-	<span> DNA + chaos game </span>
+		<span> DNA + chaos game </span>
 	</h1>
 
 	<div class="container" id="container">
 		<div id="inputContainer">
-			<label for="chosenFile">load a text file containing a DNA sequence</label>
-			<input id="chosenFile" placeholder="Choose File" disabled="disabled" />
-			<div class="fileUpload btn">
-			    <span>Upload</span>
-			    <input id="dnaFileInput" type="file" class="upload" />
+			<div id="uploadContainer">
+				<input id="chosenFile" placeholder="load txt file containing DNA sequence" disabled="disabled" />
+				<div class="fileUpload btn">
+				<span>upload</span>
+					<input id="dnaFileInput" type="file" class="upload" />
+				</div>
 			</div>
 			<br><br>	
 			
-			<label for="dnaTextArea">or enter a DNA sequence</label>
-			<textarea id="dnaTextArea" rows="10" cols="51"></textarea><br><br>
+			<textarea id="dnaTextArea" rows="10" cols="40" placeholder=" . . . or enter / paste a DNA sequence here"></textarea><br><br>
 			
-			<input id="dnaTxtButton" type="button" class="btn" value="Visualize">
+			<input id="dnaTxtButton" type="button" class="btn" value="  visualize ! ">
 		</div> 
 
-		<div id="canvasContainer"></div>
+		<div id="canvasContainer">
+			<div id="canvas_1"></div>
+			<div id="canvas_2"></div>
+			<div id="canvas_3"></div>
+			<div id="canvas_4"></div>
+		</div>
 	</div>
 	<script language="javascript" src="scripts/sketch.js"></script>
 

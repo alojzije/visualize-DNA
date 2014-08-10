@@ -3,7 +3,7 @@ body, html{
 	margin:0;
 	font-size: 16px;
 	font-family: 'Open Sans', 'Bitter', serif;
-	
+
 }
 .title{
 	margin-left: 5%;
@@ -15,3 +15,25 @@ body, html{
 .title img{
 	margin: 0 0.5em 0.2em 0;
 }
+
+#canvasContainer{
+	width: 410px;
+	height: 410px;
+	display: inline-block;
+	float: right;
+}
+
+#canvasContainer >div{
+	width: 201px;
+	height: 201px;
+	background-color: #ddd;
+	display: inline-block;
+}
+
+#inputContainer{
+	display: inline-block;
+	float: left;
+	min-width: 20em;
+	max-width: 40%;
+}
+

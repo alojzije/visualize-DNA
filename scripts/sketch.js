@@ -34,10 +34,10 @@ window.onload = function(){
       }
 
       if(!myp5) 
-        myp5 = new p5(s, 'canvasContainer');
+        myp5 = new p5(s, 'canvas_1');
       else{
         myp5.clear();
-        myp5.background(0, 125);
+        myp5.background(200);
         myp5.loop();
         myp5.redraw();
       }
@@ -62,7 +62,7 @@ var i = 0;
     sketch.createCanvas(200,200);
     sketch.strokeWeight(2);
     sketch.stroke(0, 128, 128, 80);
-    sketch.background(0, 125);
+    sketch.background(200);
    // noLoop();
 
    

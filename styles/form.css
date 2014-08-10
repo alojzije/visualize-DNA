@@ -3,7 +3,7 @@
 	overflow: hidden;
 	background-color: #fff;
 	border: 1px solid #333;
-	margin-bottom: 0.5em;
+	margin: 0 0 0.5em 0.6em;
 }
 
 .fileUpload input.upload {
@@ -38,7 +38,7 @@
 #dnaTxtButton{
 	padding: 0.6em 1em;
 	outline: none;
-	background-color: #fff;
+	background-color: rgba(255,255,255,0);
 	border: 1px solid #333;
 
 }

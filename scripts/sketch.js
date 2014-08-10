@@ -17,7 +17,6 @@ window.onload = function(){
       dnaTextArea.value = '';
       var file = dnaFileInput.files[0];
       if(file.type.match(/text.*/)){
-        console.log('akka');
         var reader = new FileReader();
         reader.onload = function(e){
             lines = reader.result;
@@ -38,6 +37,7 @@ window.onload = function(){
         myp5 = new p5(s, 'canvasContainer');
       else{
         myp5.clear();
+        myp5.background(0, 125);
         myp5.loop();
         myp5.redraw();
       }
@@ -61,14 +61,14 @@ var i = 0;
     // put setup code here
     sketch.createCanvas(200,200);
     sketch.strokeWeight(2);
-    sketch.stroke(0, 80);
+    sketch.stroke(0, 128, 128, 80);
+    sketch.background(0, 125);
    // noLoop();
 
    
   };
 
   sketch.draw = function (){
-
     var cnt = 50;
     while(--cnt){
       aminoacid = lines.charAt(i).toUpperCase();   

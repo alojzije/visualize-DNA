@@ -1,0 +1,56 @@
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: auto 10px;
+	background-color: #ccc;
+	padding: 0.6em 1em;
+
+}
+.fileUpload input.upload {
+	position: absolute;
+	width:  100%;
+	height: 100%;
+	top:  0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+
+
+#chosenFile{
+	width: 60%;
+	color: #999;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 0.6em;
+}
+#inputContainer{
+	display: inline-block;
+	float: left;
+	min-width: 20em;
+	max-width: 40%;
+}
+#canvasContainer{
+	display: inline-block;
+	float: right;
+	border: 1px solid #999;
+}
+
+#dnaTextArea{
+	border: 1px solid #ccc;
+	resize: vertical;
+}
+
+#dnaTxtButton{
+	background-color: #ccc;
+	padding: 0.6em 1em;
+	outline: none;
+
+}
+.container {
+	margin: 10em auto 0 auto;
+}

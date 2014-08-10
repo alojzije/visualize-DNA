@@ -3,17 +3,23 @@
 <head>
 	<meta charset="UTF-8"> 
 	<title>DNA visualization</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:200' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/form.css">
 	<script language="javascript" src="scripts/p5.js"></script>
 	<script language="javascript" src="scripts/p5.dom.js"></script>
 	<script src="NOhttp://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
+	<h1 class="title"> <img src="corners.png">
+	<span> DNA + chaos game </span>
+	</h1>
 
 	<div class="container" id="container">
 		<div id="inputContainer">
-			<label for="chosenFile">Load a text file containing a DNA sequence</label>
+			<label for="chosenFile">load a text file containing a DNA sequence</label>
 			<input id="chosenFile" placeholder="Choose File" disabled="disabled" />
 			<div class="fileUpload btn">
 			    <span>Upload</span>
@@ -21,8 +27,8 @@
 			</div>
 			<br><br>	
 			
-			<label for="dnaTextArea">Enter a DNA sequence</label>
-			<textarea id="dnaTextArea" rows="10" cols="50"></textarea><br><br>
+			<label for="dnaTextArea">or enter a DNA sequence</label>
+			<textarea id="dnaTextArea" rows="10" cols="51"></textarea><br><br>
 			
 			<input id="dnaTxtButton" type="button" class="btn" value="Visualize">
 		</div> 

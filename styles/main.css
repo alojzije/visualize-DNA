@@ -1,12 +1,12 @@
 body, html{
 	padding:0;
 	margin:0;
+	margin-left: 3%;
 	font-size: 16px;
 	font-family: 'Open Sans', 'Bitter', serif;
 
 }
 .title{
-	margin-left: 5%;
 	color: #111;
 	font-size: 3.5em;
 	font-family: 'Open Sans', 'Bitter', serif;
@@ -16,12 +16,20 @@ body, html{
 	margin: 0 0.5em 0.2em 0;
 }
 
-#canvasContainer{
-	width: 410px;
-	height: 410px;
+#canvasOuterContainer{
+	width: 50%;
+	min-width: 410px;
 	display: inline-block;
 	float: right;
 }
+#canvasContainer{
+	width: 410px;
+	min-width: 410px;
+	height: 410px;	
+	display: inline-block;
+	margin: 0 auto;
+}
+
 
 #canvasContainer >div{
 	width: 201px;
@@ -31,9 +39,19 @@ body, html{
 }
 
 #inputContainer{
-	display: inline-block;
-	float: left;
 	min-width: 20em;
-	max-width: 40%;
+	margin-right: 2em;
+	display: inline-block;
 }
 
+#uploadContainer{
+	min-width: 20em;
+	padding-top: 1em;
+	display: inline-block;
+	float: left;
+}
+
+.container {
+	width: 100%;
+	margin-top: 3em;
+}

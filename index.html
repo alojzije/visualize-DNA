@@ -17,7 +17,7 @@
 		<span> DNA + chaos game </span>
 	</h1>
 
-	<div class="container" id="container">
+	<div class="container" >
 		<div id="inputContainer">
 			<div id="uploadContainer">
 				<input id="chosenFile" placeholder="load txt file containing DNA sequence" disabled="disabled" />
@@ -32,12 +32,13 @@
 			
 			<input id="dnaTxtButton" type="button" class="btn" value="  visualize ! ">
 		</div> 
-
-		<div id="canvasContainer">
-			<div id="canvas_1"></div>
-			<div id="canvas_2"></div>
-			<div id="canvas_3"></div>
-			<div id="canvas_4"></div>
+		<div id="canvasOuterContainer">
+			<div id="canvasContainer">
+				<div id="canvas_1"></div>
+				<div id="canvas_2"></div>
+				<div id="canvas_3"></div>
+				<div id="canvas_4"></div>
+			</div>
 		</div>
 	</div>
 	<script language="javascript" src="scripts/sketch.js"></script>

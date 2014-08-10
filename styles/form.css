@@ -1,7 +1,6 @@
 .fileUpload {
 	position: relative;
 	overflow: hidden;
-	margin: auto 10px;
 	background-color: #fff;
 	border: 1px solid #333;
 	margin-bottom: 0.5em;
@@ -22,7 +21,6 @@
 
 
 #chosenFile{
-	width: 70%;
 	color: #666;
 	border: none;
 	border-bottom: 1px solid #333;
@@ -33,6 +31,8 @@
 #dnaTextArea{
 	border: 1px solid #333;
 	resize: vertical;
+	padding: 0.8em 0.2em;
+	min-width: 20em;
 }
 
 #dnaTxtButton{
@@ -41,7 +41,4 @@
 	background-color: #fff;
 	border: 1px solid #333;
 
-}
-.container {
-	margin: 5em auto 0 auto;
 }

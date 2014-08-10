@@ -31,6 +31,7 @@ window.onload = function(){
       if(dnaTextArea.value !== ''){
         lines = dnaTextArea.value;
         dnaFileInput.value = '';
+        chosenFile.value  = '';
       }
 
       if(!myp5) 

@@ -13,24 +13,35 @@
 	<script src="NOhttp://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-	<h1 class="title"> <img src="corners.png">
-		<span> DNA + chaos game </span>
-	</h1>
+	<div class= "title">
+		<div> <img src="corners.png"></div>
+		<div>
+			<h1 > DNA + chaos game </h1>
 
+			<div class="exampleDNA">
+				<mark> &#x2731; Don't know where to find some awesome DNA sequences to copy / paste?  
+					<a href="https://github.com/alojzije/visualize-dna/tree/master/exampleDNA" target="_blank"> &nbsp; Follow me!</a> 
+				</mark>
+			</div>
+
+		</div>
+	</div>
+
+	
 	<div class="container" >
 		<div id="inputContainer">
 			<div id="uploadContainer">
 				<input id="chosenFile" size="33" placeholder="load txt file containing DNA sequence" disabled="disabled" />
 				<div class="fileUpload btn">
-				<span>upload</span>
+					<span>upload</span>
 					<input id="dnaFileInput" type="file" class="upload" />
 				</div>
 			</div>
 			<br><br>	
 			
-			<textarea id="dnaTextArea" rows="10" cols="40" placeholder=" . . . or enter / paste a DNA sequence here"></textarea><br><br>
+			<textarea id="dnaTextArea" rows="12" cols="40" placeholder=" . . . or enter / paste a DNA sequence here"></textarea><br>
 			
-			<input id="dnaTxtButton" type="button" class="btn" value="  visualize ! ">
+			<input id="dnaTxtButton" type="button" class="btn" value="  visualize  ">
 		</div> 
 		<div id="canvasOuterContainer">
 			<div id="canvasContainer">
@@ -41,6 +52,8 @@
 			</div>
 		</div>
 	</div>
+
+	
 	<script language="javascript" src="scripts/sketch.js"></script>
 
 </body>

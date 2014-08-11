@@ -67,6 +67,7 @@ function redraw1(myp5){
         myp5.loop();
         myp5.redraw();
 }
+
 var s = function(sketch){
 
 var xbound = 170;
